@@ -1,0 +1,9 @@
+{
+  "name": "covid19",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "12ff799f"
+}

@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+        COVID-CR
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Noticias</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div *ngFor="let item of news">
+      <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>{{item.provider_news}}</ion-card-subtitle>
+            <ion-card-title>{{item.title}}</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <p id="{{item.id}}">{{setDescription(item.id)}}</p>
+           {{item.description}}
+          </ion-card-content>
+        </ion-card>
+  </div>
+
+  
+</ion-content>
